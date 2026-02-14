@@ -5,13 +5,6 @@ import pandas as pd
 
 st.set_page_config(page_title="客户管理前端", layout="wide")
 
-def test():
-    st.write("测试")
-
-def test2():
-    st.write("测试2")
-    st.write(f"{st.session_state.api_base}")
-
 
 if "api_base" not in st.session_state:
     st.session_state.api_base = "http://127.0.0.1:8000"
